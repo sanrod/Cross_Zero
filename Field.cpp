@@ -1,10 +1,8 @@
-/*
-  -вывод поля из файла в консоль (drawField)
 
-*/
 #include<iostream>
 #include"funField.h"
 #include<stdio.h>
+
 #include <windows.h>
 
 char mass[7][7];
@@ -60,5 +58,26 @@ int funField(int mas[])
     mass[3][1]=f(mas[7]);
     mass[5][1]=f(mas[8]);
     funOut(mass);
+=======
+int funField(char mass[15][15])
+{
+    int i,j;
+    for(i=0; i<15; i++)
+    {
+        for(j=0;j<15;j++)
+        {
+            if(((i!=0)||(i!=4)||(i!=9)||(i!=14))&&((j!=0)||(j!=4)||(j!=9)||(j!=14)))  mass[i][j]=0xFF;
+            if((i==0)&& (j==0)) mass[i][j]=0xC9;
+            if((i==0)&&(j==14)) mass[i][j]=0xBB;
+            if((i==14)&&(j==0)) mass[i][j]=0xC8;
+            if((i==14)&&(j==14)) mass[i][j]=0xBC;
+            if(((i==0)||(i==4)||(i==9)||(i==14))&&((j!=0)&&(j!=14))) mass[i][j]=0xCD;
+            if (((i==4)||(i==9)) && ((j==4)||(j==9))) mass[i][j]=0xCE;
+            if(((i!=0)&&(i!=14))&&((j==0)||(j==4)||(j==9)||(j==14))) mass[i][j]=0xBA;
+            printf("%c",mass[i][j]);
+        }
+        printf("\n");
+    }
+>>>>>>> refs/remotes/origin/master
         return 0;
 }
