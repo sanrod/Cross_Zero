@@ -5,8 +5,8 @@ int step(int mas[],int prov)
 {
     char null='0';
     char symbol=getch();
-    int location=symbol-null;
-    if(mas[location-1]!=-1) prov=-1;
+    int location=symbol-null-1;
+    if(mas[location]!=-1) prov=-1;
     else prov=location;
     return prov;
 }
