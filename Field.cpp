@@ -47,37 +47,14 @@ void funField(int mas[])
         }
     }
 
-    mass[1][5]=f(mas[0]);
-    mass[3][5]=f(mas[1]);
+    mass[5][1]=f(mas[0]);
+    mass[5][3]=f(mas[1]);
     mass[5][5]=f(mas[2]);
-    mass[1][3]=f(mas[3]);
+    mass[3][1]=f(mas[3]);
     mass[3][3]=f(mas[4]);
-    mass[5][3]=f(mas[5]);
+    mass[3][5]=f(mas[5]);
     mass[1][1]=f(mas[6]);
-    mass[3][1]=f(mas[7]);
-    mass[5][1]=f(mas[8]);
+    mass[1][3]=f(mas[7]);
+    mass[1][5]=f(mas[8]);
     funOut(mass);
 }
-/*int funField(char mass[15][15])
-{
-    int i,j;
-    for(i=0; i<15; i++)
-    {
-        for(j=0;j<15;j++)
-        {
-            if(((i!=0)||(i!=4)||(i!=9)||(i!=14))&&((j!=0)||(j!=4)||(j!=9)||(j!=14)))  mass[i][j]=0xFF;
-            if((i==0)&& (j==0)) mass[i][j]=0xC9;
-            if((i==0)&&(j==14)) mass[i][j]=0xBB;
-            if((i==14)&&(j==0)) mass[i][j]=0xC8;
-            if((i==14)&&(j==14)) mass[i][j]=0xBC;
-            if(((i==0)||(i==4)||(i==9)||(i==14))&&((j!=0)&&(j!=14))) mass[i][j]=0xCD;
-            if (((i==4)||(i==9)) && ((j==4)||(j==9))) mass[i][j]=0xCE;
-            if(((i!=0)&&(i!=14))&&((j==0)||(j==4)||(j==9)||(j==14))) mass[i][j]=0xBA;
-            printf("%c",mass[i][j]);
-        }
-        printf("\n");
-    }
-}*/
-//>>>>>>> refs/remotes/origin/master
-/*        return 0;
-}*/
