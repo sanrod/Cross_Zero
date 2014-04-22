@@ -12,9 +12,8 @@ char f(int x)
         return 'O';
     if(x==1)
         return 'X';
-    if(x==(-1))
-        return ' ';
 
+return ' ';
 }
 void funOut(char mass[][7])
 {
@@ -28,7 +27,7 @@ void funOut(char mass[][7])
     }
 }
 
-int funField(int mas[])
+void funField(int mas[])
 {
     system("cls");
     int i,j;
