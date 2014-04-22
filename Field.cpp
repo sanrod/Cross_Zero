@@ -58,8 +58,8 @@ int funField(int mas[])
     mass[3][1]=f(mas[7]);
     mass[5][1]=f(mas[8]);
     funOut(mass);
-=======
-int funField(char mass[15][15])
+}
+/*int funField(char mass[15][15])
 {
     int i,j;
     for(i=0; i<15; i++)
@@ -78,6 +78,7 @@ int funField(char mass[15][15])
         }
         printf("\n");
     }
->>>>>>> refs/remotes/origin/master
-        return 0;
-}
+}*/
+//>>>>>>> refs/remotes/origin/master
+/*        return 0;
+}*/
