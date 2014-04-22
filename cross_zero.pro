@@ -8,5 +8,7 @@ CONFIG += console
 CONFIG -= app_bundle
 TEMPLATE = app
 SOURCES += main.cpp \
-    Field.cpp
-HEADERS += funField.h
+    Field.cpp \
+    step.cpp
+HEADERS += funField.h \
+    step.h

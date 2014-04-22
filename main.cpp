@@ -12,6 +12,7 @@ int main()
     massS[8]=1;
     funField(massS);
 
+
 	return 0;
 }
 
