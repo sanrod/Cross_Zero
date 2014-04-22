@@ -1,4 +1,6 @@
 #ifndef FUNFIELD_H
 #define FUNFIELD_H
-int funField(char mass[15][15]);
+
+int funField(int mas[]);
+
 #endif // FUNFIELD_H

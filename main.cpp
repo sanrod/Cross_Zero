@@ -5,7 +5,11 @@
 
 int main()
 {
-    char massS[15][15];
+    int  massS[9];
+    for(int i=0;i<9;i++) massS[i]=-1;
+
+    massS[3]=0;
+    massS[8]=1;
     funField(massS);
 
 	return 0;
