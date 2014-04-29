@@ -24,12 +24,18 @@
     <ClCompile Include="step.cpp">
       <Filter>Файлы исходного кода</Filter>
     </ClCompile>
+    <ClCompile Include="end_of_game.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="funField.h">
       <Filter>Заголовочные файлы</Filter>
     </ClInclude>
     <ClInclude Include="step.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="end_of_game.h">
       <Filter>Заголовочные файлы</Filter>
     </ClInclude>
   </ItemGroup>
