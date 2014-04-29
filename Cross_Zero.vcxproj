@@ -71,9 +71,11 @@
   <ItemGroup>
     <ClCompile Include="Field.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="step.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="funField.h" />
+    <ClInclude Include="step.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
