@@ -1,0 +1,4 @@
+int II(int mas[])
+{
+
+}

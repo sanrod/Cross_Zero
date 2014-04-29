@@ -10,7 +10,9 @@ TEMPLATE = app
 SOURCES += main.cpp \
     Field.cpp \
     step.cpp \
-    end_of_game.cpp
+    end_of_game.cpp \
+    II.cpp
 HEADERS += funField.h \
     step.h \
-    end_of_game.h
+    end_of_game.h \
+    II.h
