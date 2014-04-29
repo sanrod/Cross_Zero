@@ -1,0 +1,4 @@
+bool endOfGame (int mas[])
+{
+
+}
