@@ -69,11 +69,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="end_of_game.cpp" />
     <ClCompile Include="Field.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="step.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="end_of_game.h" />
     <ClInclude Include="funField.h" />
     <ClInclude Include="step.h" />
   </ItemGroup>

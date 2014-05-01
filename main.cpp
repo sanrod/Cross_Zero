@@ -13,14 +13,14 @@ int main()
     int  massS[9];
     int prov;
     int x;
-    bool CorZ=false;
+    int CorZ=1;
     for(int i=0;i<9;i++) massS[i]=-1;
 
     //massS[8]=0;
     //massS[3]=0;
     //massS[8]=1;
     funField(massS);
-    while (endOfGame(massS))
+    while (!endOfGame(massS))
     {
         x=step(massS,prov);
         if (x==-1)
@@ -34,7 +34,8 @@ int main()
             funField(massS);
         }
 
-        CorZ=!CorZ;
+        if (CorZ==1) CorZ=0;
+        else CorZ=1;
     }
 
 	return 0;
