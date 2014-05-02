@@ -1,9 +1,16 @@
 #include "end_of_game.h"
+
+int check_number = 0;
+
+int whoiswinner()
+{
+    return check_number;
+}
+
 bool endOfGame (int mas[9])
 {
 	bool check = false;
-	int check_number = 0;
-	for (int i = 0; i < 9; i = i + 3)
+        for (int i = 0; i < 9; i = i + 3)
 	{
 		if ((mas[i] == 0) && (mas[i + 1] == 0) && (mas[i + 2] == 0))
 		{
@@ -49,9 +56,5 @@ bool endOfGame (int mas[9])
 		check = true;
 		check_number = 2;
 	}
-	if (check_number == 1)
-		printf("Player 2 Win!!!");
-	if (check_number == 2)
-		printf("Player 1 Win!!!,player 2 looooooooooser!!!!");
 	return check;
 }

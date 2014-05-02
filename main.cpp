@@ -38,6 +38,11 @@ int main()
         else CorZ=1;
     }
 
+    if (whoiswinner() == 1)
+            printf("Player 2 Win!!!");
+    if (whoiswinner() == 2)
+            printf("Player 1 Win!!!,player 2 looooooooooser!!!!");
+
 	return 0;
 }
 
